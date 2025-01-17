@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>Subgraph Terinduksi Sisi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <i class="bi bi-calculator"></i> Subgraph
+        </a>
+
+        <nav class="navbar">
+            <div id="close-navbar" class="fas fa-times"></div>
+            <a href="index.html">Beranda</a>
+            
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle">Materi</a>
+                <ul class="dropdown-menu">
+                    <li><a href="subgraph.html">Subgraph</a></li>
+                    <li><a href="spanning.html">Spanning Subgraph</a></li>
+                    <li><a href="indukV.html">Subgraph terinduksi Verteks</a></li>
+                    <li><a href="indukS.html">Subgraph terinduksi Sisi</a></li>
+                    <li><a href="kurangHV.html">Penghapusan Himpunan Verteks</a></li>
+                    <li><a href="tambahHS.html">Penambahan Himpunan Sisi</a></li>
+                </ul>
+            </div>
+            
+            <div class="dropdown">
+                <a href="kalkulator.html">Kalkulator</a>
+            </div>
+          
+            <div class="dropdown">
+                <a href="tentang.html">Tentang</a>
+            </div>
+    </header>
+    
+        <section class="iduksiS">
+            <h1>Subgraph Terinduksi Sisi (edge)</h1>
+
+            <div class="video-container">
+                <iframe width="560" height="315" src="Sisi.mp4" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="description">
+                <h3>Definisi</h3>
+                <p>Definisi: Subgraph terinduksi sisi (edge-induced subgraph) adalah jenis subgraph yang dibentuk dengan memilih himpunan tertentu dari sisi (edges) dalam graf asli dan semua simpul (vertices) yang terhubung oleh sisi-sisi tersebut. Dengan kata lain, jika kita memiliki graf ( G ) dan kita memilih subset dari sisi-sisi, subgraph terinduksi sisi akan mencakup semua simpul yang terhubung oleh sisi-sisi yang dipilih.</p>
+
+                <h3>Notasi</h3>
+                <p>Jika ( G = (V, E) ) adalah graf, di mana ( V ) adalah himpunan simpul dan ( E ) adalah himpunan sisi, dan ( E' \subseteq E ) adalah himpunan sisi yang dipilih, maka subgraph terinduksi sisi yang dihasilkan dari ( E' ) adalah graf ( G[E'] = (V', E') ), di mana ( V' ) adalah himpunan simpul yang terhubung oleh sisi-sisi dalam ( E' ).</p>
+            </div>
+        </section>
+        <div class="btn" style="display: block; margin: 20px auto; width: 150px;">
+            <a href="quiz.html" style="text-decoration: none; color: black;">Quiz</a>
+        </div>
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3><i class="bi  bi-calculator">Subgraph</i></h3>
+                <p>Kelompok 8 Materi Subgraph</p>
+                <div class="share">
+                    <a href="#" class="fab fa-whatsapp"></a>
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="index.html" class="link">Beranda</a>
+                <a href="materi.html" class="link">Materi</a>
+                <a href="kalkulator.html" class="link">Kalkulator</a>
+                <a href="tentang.html" class="link">Tentang</a>
+            </div>
+
+            <div class="box">
+                <h3>artikel terkait</h3>
+                <a href="https://repository.bbg.ac.id/bitstream/602/1/Matematika_Diskrit.pdf" class="link">Matematika Diskrit</a>
+                <a href="https://www.scirp.org/journal/paperinformation?paperid=24827" class="link">Subgraph dalam teori Graph</a>
+                <a href="https://proceedings.neurips.cc/paper_files/paper/2020/file/5bca8566db79f3788be9efd96c9ed70d-Paper.pdf" class="link">Subgraph pada Network</a>
+            </div>
+            <div class="box">
+                <h3>Masukan</h3>
+                <form action>
+                    <input type="email" name placeholder="Enter your Email"
+                        id class="email">
+                    <input type="submit" value="subscribe" class="btn">
+                </form>
+            </div>
+        </div>
+         <div class="credit">all rights reserved</div>
+    </section>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

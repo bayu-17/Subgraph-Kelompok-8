@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz Subgrap Terinduksi Verteks</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <i class="bi bi-calculator"></i> Subgraph
+        </a>
+
+        <nav class="navbar">
+            <div id="close-navbar" class="fas fa-times"></div>
+            <a href="index.html">Beranda</a>
+            
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle">Materi</a>
+                <ul class="dropdown-menu">
+                    <li><a href="subgraph.html">Subgraph</a></li>
+                    <li><a href="spanning.html">Spanning Subgraph</a></li>
+                    <li><a href="indukV.html">Subgraph terinduksi Verteks</a></li>
+                    <li><a href="indukS.html">Subgraph terinduksi Sisi</a></li>
+                    <li><a href="kurangHV.html">Penghapusan Himpunan Verteks</a></li>
+                    <li><a href="tambahHS.html">Penambahan Himpunan Sisi</a></li>
+                </ul>
+            </div>
+            
+            <div class="dropdown">
+                <a href="kalkulator.html">Kalkulator</a>
+            </div>
+          
+            <div class="dropdown">
+                <a href="tentang.html">Tentang</a>
+            </div>
+    </header>
+
+    <section class="kuis">
+        <div class="quiz-container">
+            <h2>Kuis Subgraph Terinduksi Verteks</h2>
+            <div class="question">
+                <p>1. Apa yang dimaksud dengan subgraf terinduksi verteks dalam suatu graf G?</p>
+                <p><input type="radio" name="q1" value="1"> Subgraf yang hanya memiliki sisi tertentu dari G.<br></p>
+                <p><input type="radio" name="q1" value="2"> Subgraf yang hanya mencakup simpul tertentu dari G, beserta semua sisi yang menghubungkan simpul-simpul tersebut.<br></p>
+                <p><input type="radio" name="q1" value="3"> Subgraf yang hanya mencakup semua sisi dari G, tetapi tidak semua simpulnya.<br></p>
+                <p><input type="radio" name="q1" value="4"> Subgraf yang selalu merupakan graf terhubung.<br></p>
+                <p class="explanation" style="color: red; display: none;">Jawaban salah. Subgraf terinduksi verteks mencakup simpul tertentu dan semua sisi yang menghubungkan simpul-simpul tersebut, bukan hanya sisi tertentu atau semua sisi dari graf.</p>
+            </div>
+            <div class="question">
+                <p>2. Diberikan graf G dengan himpunan simpul V={A,B,C,D,E} dan himpunan sisi E={(A,B),(B,C),(C,D),(D,E),(A,E)}. Jika subgraf terinduksi dibuat pada simpul {A,C,E}, sisi-sisi manakah yang termasuk dalam subgraf tersebut?</p>
+                <p><input type="radio" name="q2" value="1"> {(A,B),(C,D),(D,E)}<br></p>
+                <p><input type="radio" name="q2" value="2"> {(A,E),(C,D)}<br></p>
+                <p><input type="radio" name="q2" value="3"> {(A,C),(C,E)}<br></p>
+                <p><input type="radio" name="q2" value="4"> {(A,E)}<br></p>
+                <p class="explanation" style="color: red; display: none;">Jawaban salah. Subgraf terinduksi pada simpul {A,C,E} hanya mencakup sisi yang menghubungkan simpul-simpul tersebut, yaitu {(A,E)}.</p>
+            </div>
+            <div class="question">
+                <p>3. Manakah pernyataan berikut yang benar tentang subgraf terinduksi verteks?</p>
+                <p><input type="radio" name="q3" value="1"> Semua simpul dan sisi dalam graf asal G harus dimasukkan ke dalam subgraf.<br></p>
+                <p><input type="radio" name="q3" value="2"> Subgraf terinduksi verteks dapat mencakup sisi yang menghubungkan simpul di luar himpunan simpul yang dipilih.<br></p>
+                <p><input type="radio" name="q3" value="3"> Jika simpul v berada dalam subgraf terinduksi, maka semua sisi yang terhubung ke v juga harus berada dalam subgraf.<br></p>
+                <p><input type="radio" name="q3" value="4"> Subgraf terinduksi verteks hanya mencakup sisi yang menghubungkan simpul-simpul dalam himpunan simpul yang dipilih.<br></p>
+                <p class="explanation" style="color: red; display: none;">Jawaban salah. Subgraf terinduksi verteks hanya mencakup sisi yang menghubungkan simpul-simpul dalam himpunan simpul yang dipilih, bukan semua sisi yang terhubung ke simpul.</p>
+            </div>
+            <div class="question">
+                <p>4. Diberikan graf G dengan simpul V={1,2,3,4,5} dan sisi E={(1,2),(2,3),(3,4),(4,5),(1,5)}. Jika subgraf terinduksi dibuat dengan memilih simpul {2,3,4}, berapakah jumlah sisi dalam subgraf tersebut?</p>
+                <p><input type="radio" name="q4" value="1"> 0<br></p>
+                <p><input type="radio" name="q4" value="2"> 1<br></p>
+                <p><input type="radio" name ="q4" value="3"> 2<br></p>
+                <p><input type="radio" name="q4" value="4"> 4<br></p>
+                <p class="explanation" style="color: red; display: none;">Jawaban salah. Subgraf terinduksi pada simpul {2,3,4} mencakup sisi {(2,3)} dan {(3,4)}, sehingga jumlah sisi dalam subgraf tersebut adalah 2.</p>
+            </div>
+            <div class="question">
+                <p>5. Jika sebuah subgraf terinduksi verteks dibuat pada simpul V′dalam graf G, maka:</p>
+                <p><input type="radio" name="q5" value="1"> Semua sisi yang menghubungkan simpul-simpul dalam V′harus dimasukkan.<br></p>
+                <p><input type="radio" name="q5" value="2"> Semua simpul dan sisi dalam G harus dimasukkan.<br></p>
+                <p><input type="radio" name="q5" value="3"> Subgraf tersebut akan selalu menjadi graf terhubung.<br></p>
+                <p><input type="radio" name="q5" value="4"> Subgraf tersebut tidak perlu mencakup semua simpul dari G.<br></p>
+                <p class="explanation" style="color: red; display: none;">Jawaban salah. Subgraf terinduksi verteks hanya mencakup simpul-simpul dalam V′ dan semua sisi yang menghubungkan simpul-simpul tersebut, tidak perlu mencakup semua simpul dari G.</p>
+            </div>
+            <button onclick="checkAnswers()">Kirim Jawaban</button>
+            <div class="result" id="result"></div>
+        </div>
+    </section>
+    <script>
+        // Jawaban yang benar untuk setiap pertanyaan
+        const correctAnswers = {
+            q1: "2", 
+            q2: "4", 
+            q3: "4", 
+            q4: "3", 
+            q5: "1"
+        };
+    
+        // Poin per jawaban yang benar
+        const pointsPerCorrectAnswer = 1;
+    
+        // Fungsi untuk memeriksa jawaban dan menghitung poin
+        function checkAnswers() {
+            let totalPoints = 0; // Total poin
+    
+            // Iterasi setiap pertanyaan
+            for (const [question, correctAnswer] of Object.entries(correctAnswers)) {
+                const selectedOption = document.querySelector(`input[name="${question}"]:checked`);
+    
+                if (selectedOption && selectedOption.value === correctAnswer) {
+                    totalPoints += pointsPerCorrectAnswer; // Tambahkan poin jika jawaban benar
+                } else {
+                    // Tampilkan penjelasan untuk jawaban yang salah
+                    const explanation = selectedOption ? selectedOption.closest('.question').querySelector('.explanation') : null;
+                    if (explanation) {
+                        explanation.style.display = 'block'; // Tampilkan penjelasan
+                    }
+                }
+            }
+    
+            // Tampilkan total poin
+            const resultDiv = document.getElementById("result");
+            if (resultDiv) {
+                resultDiv.innerHTML = `<p>Total Poin Anda: <strong>${totalPoints}</strong> / ${Object.keys(correctAnswers).length * pointsPerCorrectAnswer}</p>`;
+            } else {
+                console.error("Element with ID 'result' not found!");
+            }
+        }
+    </script>
+
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3><i class="bi  bi-calculator">Subgraph</i></h3>
+            <p>Kelompok 8 Materi Subgraph</p>
+            <div class="share">
+                <a href="#" class="fab fa-whatsapp"></a>
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Quick links</h3>
+            <a href="index.html" class="link">Beranda</a>
+            <a href="materi.html" class="link">Materi</a>
+            <a href="kalkulator.html" class="link">Kalkulator</a>
+            <a href="tentang.html" class="link">Tentang</a>
+        </div>
+
+        <div class="box">
+            <h3>useful links</h3>
+            <a href="#" class="link">Help Desk</a>
+            <a href="#" class="link">FAQs</a>
+            <a href="#" class="link">Send Feedback</a>
+            <a href="#" class="link">Privacy Policy</a>
+        </div>
+
+        <div class="box">
+            <h3>Newsletter</h3>
+            <p>Subscribe to our newsletter</p>
+            <form action>
+                <input type="email" name placeholder="Enter your Email"
+                    id class="email">
+                <input type="submit" value="subscribe" class="btn">
+            </form>
+        </div>
+    </div>
+
+    <div class="credit">all rights reserved</div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

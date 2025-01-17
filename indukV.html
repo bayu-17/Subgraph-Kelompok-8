@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>Subgraph Teinduksi Verteks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <i class="bi bi-calculator"></i> Subgraph
+        </a>
+
+        <nav class="navbar">
+            <div id="close-navbar" class="fas fa-times"></div>
+            <a href="index.html">Beranda</a>
+            
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle">Materi</a>
+                <ul class="dropdown-menu">
+                    <li><a href="subgraph.html">Subgraph</a></li>
+                    <li><a href="spanning.html">Spanning Subgraph</a></li>
+                    <li><a href="indukV.html">Subgraph terinduksi Verteks</a></li>
+                    <li><a href="indukS.html">Subgraph terinduksi Sisi</a></li>
+                    <li><a href="kurangHV.html">Penghapusan Himpunan Verteks</a></li>
+                    <li><a href="tambahHS.html">Penambahan Himpunan Sisi</a></li>
+                </ul>
+            </div>
+            
+            <div class="dropdown">
+                <a href="kalkulator.html">Kalkulator</a>
+            </div>
+          
+            <div class="dropdown">
+                <a href="tentang.html">Tentang</a>
+            </div>
+    </header>
+    
+        <section class="induksiV">
+            <h1>Subgraph Terinduksi Verteks (simpul)</h1>
+
+            <div class="video-container">
+                <iframe width="560" height="315" src="verteks.mp4" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="description">
+                <h3>Definisi</h3>
+                <p>Subgraph terinduksi (induced subgraph) adalah jenis subgraph yang dibentuk dari graf asli dengan memilih himpunan tertentu dari simpul (vertices) dan semua sisi (edges) yang menghubungkan simpul-simpul tersebut dalam graf asli. Dengan kata lain, jika kita memiliki graf G dan kita memilih subset dari simpul-simpulnya, subgraph terinduksi akan mencakup semua sisi yang ada di G yang menghubungkan simpul-simpul yang dipilih.</p>
+
+                <h3>Notasi</h3>
+                <p>Jika ( G = (V, E) ) adalah graf, di mana ( V ) adalah himpunan simpul dan ( E ) adalah himpunan sisi, dan ( V' \subseteq V ) adalah himpunan simpul yang dipilih, maka subgraph terinduksi yang dihasilkan dari ( V' ) adalah graf ( G[V'] = (V', E') ), di mana ( E' ) adalah himpunan sisi yang menghubungkan simpul-simpul dalam ( V' ).</p>
+            </div>
+        </section>
+
+        <div class="btn" style="display: block; margin: 20px auto; width: 150px;">
+            <a href="quiz.html" style="text-decoration: none; color: black;">Quiz</a>
+        </div>
+
+        <section class="footer">
+            <div class="box-container">
+                <div class="box">
+                    <h3><i class="bi  bi-calculator">Subgraph</i></h3>
+                    <p>Kelompok 8 Materi Subgraph</p>
+                    <div class="share">
+                        <a href="#" class="fab fa-whatsapp"></a>
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h3>Quick links</h3>
+                    <a href="index.html" class="link">Beranda</a>
+                    <a href="materi.html" class="link">Materi</a>
+                    <a href="kalkulator.html" class="link">Kalkulator</a>
+                    <a href="tentang.html" class="link">Tentang</a>
+                </div>
+
+                <div class="box">
+                    <h3>useful links</h3>
+                    <a href="#" class="link">Help Desk</a>
+                    <a href="#" class="link">FAQs</a>
+                    <a href="#" class="link">Send Feedback</a>
+                    <a href="#" class="link">Privacy Policy</a>
+                </div>
+
+                <div class="box">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter</p>
+                    <form action>
+                        <input type="email" name placeholder="Enter your Email"
+                            id class="email">
+                        <input type="submit" value="subscribe" class="btn">
+                    </form>
+                </div>
+            </div>
+
+            <div class="credit">all rights reserved</div>
+        </section>
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
